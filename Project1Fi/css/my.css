@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* [START] NAVIGATION BAR [START] */
+
+.navcontainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  box-sizing: border-box;
+  background: rgb(22, 44, 58);
+  padding: 20px;
+}
+
+.header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  font-family: Cinzel;
+  color: white;
+  float: left;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  font-family: Brandon Grotesque;
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 20px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a {
+  color: RGB(219, 204, 181);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: RGB(181, 104, 76);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: RGB(181, 104, 76);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/*faq stuff */
+
+.questions {
+  font-family: Cinzel;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.checkoutsection {
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 0px;
+}
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  margin-right: 200px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  font-family: Cinzel;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+  font-family: Cinzel;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  flex: 75%;
+  font-family: Cinzel;
+}
+
+.col-25, .col-50, .col-75 {
+  padding: 0 16px;
+  font-family: Cinzel;
+}
+
+.container {
+  background-color: RGB(219, 204, 181);
+  padding: 5px 20px 15px 20px;
+  border: 1px solid white;
+  font-family: Cinzel;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  font-family: Fauna One;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  font-family: Cinzel;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  font-family: Fauna One;
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: RGB(22, 44, 58);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: Cinzel;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: RGB(181, 104, 76);
+  font-family: Fauna One;
+}
+
+span.price {
+  font-family: Cinzel;
+  float: right;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
