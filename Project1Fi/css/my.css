@@ -79,16 +79,18 @@ nav a:hover::before {
 /*faq stuff */
 
 .questions {
+  background: ;
   font-family: Cinzel;
   margin-top: 50px;
   margin-left: 200px;
   margin-right: 200px;
 }
 
-.checkoutsection {
+.checkoutsection .row .container{
   margin-top: 50px;
-  margin-left: 200px;
-  margin-right: 0px;
+  margin-bottom: 100px;
+  width: 80%;
+
 }
 
 .row {
@@ -98,30 +100,9 @@ nav a:hover::before {
   -ms-flex-wrap: wrap;
   /* IE10 */
   flex-wrap: wrap;
-  margin: 0 -16px;
-  margin-right: 200px;
+
 }
 
-.col-25 {
-  -ms-flex: 25%;
-  /* IE10 */
-  flex: 25%;
-  font-family: Cinzel;
-}
-
-.col-50 {
-  -ms-flex: 50%;
-  /* IE10 */
-  flex: 50%;
-  font-family: Cinzel;
-}
-
-.col-75 {
-  -ms-flex: 75%;
-  /* IE10 */
-  flex: 75%;
-  font-family: Cinzel;
-}
 
 .col-25, .col-50, .col-75 {
   padding: 0 16px;
@@ -131,7 +112,6 @@ nav a:hover::before {
 .container {
   background-color: RGB(219, 204, 181);
   padding: 5px 20px 15px 20px;
-  border: 1px solid white;
   font-family: Cinzel;
   border-radius: 3px;
 }
