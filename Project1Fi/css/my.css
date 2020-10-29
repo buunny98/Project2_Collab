@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* [START] NAVIGATION BAR [START] */
@@ -11,10 +10,24 @@ body {
   margin: 0 auto;
 }
 
+.navcontainerBottom {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .header {
   box-sizing: border-box;
   background: rgb(22, 44, 58);
   padding: 20px;
+}
+
+@media (max-width: 17rem) {
+  .header {
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(22, 44, 58);
+    padding: 0rem;
+  }
 }
 
 .header::after {
@@ -29,6 +42,13 @@ body {
   float: left;
   padding-left: 40px;
   text-decoration: none;
+}
+
+@media (max-width: 17rem) {
+  .logo {
+    font-size: 10vw;
+    padding: 0rem;
+  }
 }
 
 nav {
@@ -79,18 +99,17 @@ nav a:hover::before {
 /*faq stuff */
 
 .questions {
-  background: ;
   font-family: Cinzel;
-  margin-top: 50px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-top: 5rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
 }
 
-.checkoutsection .row .container{
+.checkoutsection .row .container {
   margin-top: 50px;
   margin-bottom: 100px;
-  width: 80%;
-
+  margin-left: 0rem;
+  width: 90%;
 }
 
 .row {
@@ -100,12 +119,10 @@ nav a:hover::before {
   -ms-flex-wrap: wrap;
   /* IE10 */
   flex-wrap: wrap;
-
 }
 
-
 .col-25, .col-50, .col-75 {
-  padding: 0 16px;
+  padding: 0 1rem;
   font-family: Cinzel;
 }
 
@@ -164,11 +181,69 @@ span.price {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 
-@media (max-width: 800px) {
+.grid {
+  display: grid;
+}
+
+/*@media (max-width: 800px) {
   .row {
     flex-direction: column-reverse;
   }
   .col-25 {
     margin-bottom: 20px;
+  }
+}*/
+
+@media (max-width: 50rem) {
+  .grid.add-gutters {
+    /*
+      took the help from IAT 235 Notes
+      */
+    /* adding gutters to the columns */
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+@media (min-width: 35rem) {
+  .grid.grid2 {
+    /*
+  took the help from IAT 235 Notes
+  */
+    grid-template-columns: 8fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: 90rem) {
+  .grid.grid12 {
+    /*
+    took the help from IAT 235 Notes
+    */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+  }
+}
+
+.copyright {
+  color: white;
+  margin-left: 5rem;
+  margin-top: -4rem;
+}
+
+@media (max-width: 35rem) {
+  .copyright {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 15rem) {
+  .copyright {
+    margin-top: 1rem;
+    font-size: 6vw;
+    padding: 0rem;
+    margin-left: 0rem;
   }
 }
