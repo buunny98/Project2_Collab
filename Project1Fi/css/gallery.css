@@ -1,90 +1,109 @@
+.navcontainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navcontainerBottom {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    box-sizing: border-box;
+    background: rgb(22, 44, 58);
+    padding: 20px;
+}
+
+.homeColor {
+    color: rgb(134, 134, 134);
+}
+
+.header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    font-family: 'Cinzel';
+    color: white;
+    float: left;
+    padding-left: 40px;
+    text-decoration: none;
+}
+
+@media (max-width: 17rem) {
+    .logo {
+        font-size: 10vw;
+        padding: 0rem;
+    }
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    font-family: Brandon Grotesque;
+    display: inline-block;
+    margin-left: 70px;
+    margin-right: 20px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: RGB(219, 204, 181);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: RGB(181, 104, 76);
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: RGB(181, 104, 76);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+/*  [END] NAVIGATION BAR [END]
+
+/* [START] GALLERY [START]
+		retrieved from https://www.youtube.com/watch?v=ltxxNidblts&t=595s*/
+
+
 body {
 	margin: 0;
 	padding: 0;
-	background:;
 	box-sizing: border-box;
 	background: rgb(219, 204, 181);
 }
 
-/* [START] NAVIGATION BAR [START]*/
-
-.navcontainer {
-	width: 80%;
-	margin: 0 auto;
-}
-
-.header {
-  box-sizing: border-box;
-  background: rgb(22, 44, 58);
-  padding: 20px;
-}
-
-.header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  font-family: Cinzel;
-  color: white;
-  float: left;
-	padding-left: 40px;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  font-family: Brandon Grotesque;
-  display: inline-block;
-  margin-left: 70px;
-	margin-right: 20px;
-  padding-top: 23px;
-  position: relative;
-}
-
-nav a {
-  color: RGB(219, 204, 181);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: RGB(181, 104, 76);
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: RGB(181, 104, 76);
-  position: absolute;
-  top: 0;
-  width: 0%;
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-/* [END] NAVIGATION BAR [END] */
-/* [START] GALLERY [START]
-		retrieved from https://www.youtube.com/watch?v=ltxxNidblts&t=595s*/
 
 .container{
-	background: ;
+	padding-top: 100px;
 	width: 80%;
-	background: ;
 	margin: 70px auto 0;
+	margin-bottom: 200px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -96,7 +115,6 @@ nav a:hover::before {
 	position: relative;
 	width: 300px;
 	height: 300px;
-	background: ;
 	margin: 10px;
 	display: inline-block;
 }
@@ -121,9 +139,10 @@ nav a:hover::before {
 	left: 10px;
 	bottom: 10px;
 	right: 10px;
-	background: RGB(181, 104, 76);
+	background: rgba(181, 104, 76, 0.7);
 	transform: scaleY(0);
 	transition: transform 0.5s;
+
 }
 
 .container .box:hover .details{
@@ -156,7 +175,7 @@ nav a:hover::before {
 
 /*BUTTON*/
 .btn{
-	transform: translate(80px, 200px);
+	transform: translate(90px, 200px);
   border-radius: 15px;
   padding: 10px 20px;
   font-size: 15px;
