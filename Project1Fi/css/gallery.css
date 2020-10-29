@@ -103,6 +103,7 @@ body {
 	padding-top: 100px;
 	width: 80%;
 	margin: 70px auto 0;
+	margin-bottom: 200px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -138,7 +139,7 @@ body {
 	left: 10px;
 	bottom: 10px;
 	right: 10px;
-	background: rgba(181, 104, 76, 0.5);
+	background: rgba(181, 104, 76, 0.7);
 	transform: scaleY(0);
 	transition: transform 0.5s;
 
