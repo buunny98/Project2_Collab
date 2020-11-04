@@ -98,9 +98,24 @@ body {
 	background: rgb(219, 204, 181);
 }
 
+.intro{
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.intro h1{
+      font-family: 'Brandon Grotesque';
+      font-size: 60px;
+}
+
+.intro p{
+  font-family: 'Fauna one';
+  font-size: 15px;
+}
 
 .container{
-	padding-top: 100px;
+	padding-top: 50px;
 	width: 80%;
 	margin: 70px auto 0;
 	margin-bottom: 200px;
