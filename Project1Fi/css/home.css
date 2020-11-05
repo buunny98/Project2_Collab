@@ -44,6 +44,12 @@ body {
     margin-top: -1rem;
 }
 
+@media (max-width: 50rem) {
+    .hero-image {
+        height: 450px;
+    }
+}
+
 .navcontainerBottom {
     width: 100%;
     margin: 0 auto;
@@ -580,7 +586,6 @@ hr {
     margin-bottom: 5px;
 }
 
-
 @media (max-width: 880px) {
     .footer-distributed {
         font: bold 14px sans-serif;
@@ -608,6 +613,7 @@ hr {
 .emailColor {
     color: white;
 }
-span.c{
+
+span.c {
     display: block;
 }
