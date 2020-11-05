@@ -9,140 +9,162 @@
   <title>Checkout </title>
   <link rel="stylesheet" type="text/css" href="css/my.css" />
   <link rel="stylesheet" href="css/normalize.css">
-  <section class="element">
-    <div class="header">
-      <div class="navcontainer">
-        <h1 class="logo"> <a href="index.html" class="logo">Shyama's</a> </h1>
-        <nav>
-          <ul>
-            <strong>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="gallery.html">GALLERY</a></li>
-              <li><a href="checkout.html">ORDER</a></li>
-              <li><a href="FAQ.html">FAQ'S</a></li>
-            </strong>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </section>
+
+  <!-- Took a little help from online resource: https://tutorialzine.com/-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-  <div class="checkoutsection">
-    <div class="row">
-      <div class="col-75">
-        <div class="container">
-          <form action="/action_page.php">
-
-            <div class="row">
-              <div class="col-50">
-                <h3>Billing Address</h3>
-                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input type="text" id="email" name="email" placeholder="john@example.com">
-                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                <label for="city"><i class="fa fa-institution"></i> City</label>
-                <input type="text" id="city" name="city" placeholder="New York">
-
-                <div class="row">
-                  <div class="col-50">
-                    <label for="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="NY">
-                  </div>
-                  <div class="col-50">
-                    <label for="zip">Zip</label>
-                    <input type="text" id="zip" name="zip" placeholder="10001">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-50">
-                <h3>Payment</h3>
-                <label for="fname">Accepted Cards</label>
-                <div class="icon-container">
-                  <i class="fa fa-cc-visa" style="color:navy;"></i>
-                  <i class="fa fa-cc-amex" style="color:blue;"></i>
-                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                  <i class="fa fa-cc-discover" style="color:orange;"></i>
-                </div>
-                <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                <label for="ccnum">Credit card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                <label for="expmonth">Exp Month</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="September">
-
-                <div class="row">
-                  <div class="col-50">
-                    <label for="expyear">Exp Year</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="2018">
-                  </div>
-                  <div class="col-50">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="352">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <label>
-              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-            </label>
-            <input type="submit" value="Continue to checkout" class="btn">
-          </form>
-        </div>
-      </div>
-
-      <div class="col-25">
-        <div class="container">
-          <h4>Cart
-            <span class="price" style="color:black">
-              <i class="fa fa-shopping-cart"></i>
-              <b>4</b>
-            </span>
-          </h4>
-          <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-            <img src="img/gallery1.jpeg" width="80px" alt="picture 3">
-          <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-            <img src="img/gallery2.jpeg" width="80px" alt="picture 3">
-          <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-            <img src="img/gallery3.jpeg" width="80px" alt="picture 3">
-          <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-            <img src="img/gallery4.jpeg"  width="80px" alt="picture 3">
-          <hr>
-          <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="header">
-    <div class="navcontainerBottom grid grid2 add-gutters">
-
-      <div class="grid grid12 add-gutters">
-        <h1 class="logo"> <a href="index.html" class="logo">Shyama's <br> Cake Designs</a> </h1>
-        <p class="copyright">&#169; 2020 Shyama’s Cake Designs </p>
-      </div>
-
-      <div class="grid grid12 add-gutters">
+  <section class="element">
+    <div class="header">
+      <div class="navcontainer">
         <nav>
-          <ul>
-            <strong>
-              <li><a href="checkout.html">Contact us</a></li>
-              <li><a href="style.html">styleguide</a></li>
-              <li><a href="https://www.facebook.com/groups/98439537650/">Phone</a></li>
-              <li><a href="https://www.facebook.com/groups/98439537650">Instagram</a></li>
-              <li><a href="https://www.facebook.com/groups/98439537650">Facebook</a></li>
-            </strong>
+          <input id="nav-toggle" type="checkbox">
+          <div class="logo logoCo"><a href="index.html" class="logoCo"><strong>Shyama's</strong></a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="checkout.html">Order</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
           </ul>
+          <label for="nav-toggle" class="icon-burger">
+            <span class=" c line"></span>
+            <span class=" c line"></span>
+            <span class=" c line"></span>
+          </label>
         </nav>
       </div>
     </div>
+
+  </section>
+
+  <div class="intro">
+    <h1>O R D E R</h1>
+    <h2>Fill out the form below.</h2>
+    <p>Please provide your details and specify your requirements and special requests in the space provided below.</p>
   </div>
+
+  <div class="filloutform">
+  <div class="textinput">
+    <div class="form">
+      <input type="text" name="name" autocomplete="off" required />
+      <label for="name" class="label-name">
+        <span class="content-name">Name</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="textinput">
+    <div class="form">
+      <input type="text" name="name" autocomplete="off" required />
+      <label for="name" class="label-name">
+        <span class="content-name">Email</span>
+      </label>
+    </div>
+  </div>
+    <div class="orderinput">
+      Order Description:<br><br>
+      <textarea id="order" name="order" style="width: 100%;height:200px" placeholder="type your order here..."></textarea>
+    </div>
+</div>
+
+
+
+
+
+
+
+  <div class="email">
+
+
+    <div class="uploadpic">
+      <h2>Upload your inspiration.</h2>
+      <p>Take a look at the <a href="gallery.html">Gallery</a> page and save your inspirations. You can upload them
+        here.</p>
+      <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename"><br><br>
+        <button class="btn btn1">send</button>
+        <button class="btn btn1">reset</button>
+      </form>
+    </div>
+
+    <div class="uploadpic">
+      <h2>Payment Forms.</h2>
+        <div class="row">
+          <div class="column">
+            <img src="img/cash_icon.png" alt="cash icon" height="80">
+            <img src="img/e-Transfer_logo.png" alt="etransfer" height="65">
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3 class="logoFooter">Shyama’s</h3>
+
+      <p class="footer-links textFooter">
+        <a href="index.html">Home</a>
+        ·
+        <a href="gallery.html">Gallery</a>
+        ·
+        <a href="checkout.html">Order</a>
+        ·
+        <a href="FAQ.html">FAQ's</a>
+        ·
+        <a href="style.html">Style Guide</a>
+      </p>
+
+      <p class="footer-company-name logoFooter">Shyama’s &copy; 2019</p>
+    </div>
+
+    <div class="footer-center textFooter">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>8884 140B Street</span>Surrey, BC, Canada</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+1(604)-240-1471</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:shyamagalabadage@gmail.com" class="emailColor">shyamagalabadage@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right textFooter">
+
+      <p class="footer-company-about">
+        <span>About us</span>
+        "Located in Surrey, British Columbia, The Cake Shop crafts all of our baked treats from scratch with
+        fresh natural ingredients. Nothing
+        is ever frozen and we use all natural ingredients"
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com/groups/98439537650"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/nperera17?s=20"><i class="fa fa-twitter"></i></a>
+        <a href="https://ca.linkedin.com/in/nisha-perera-667b54130?trk=people-guest_people_search-card"><i
+            class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/buunny98/Project2_Collab"><i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
 </body>
 
 </html>

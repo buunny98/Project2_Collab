@@ -1,49 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <title>Shyama's Style Guide</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
-
 </head>
 
 <body>
-  <!-- navigation bar-->
-  <header>
-    <h1>Shyama's Style Guide</h1>
-    <p>A Style guide for Shyama's Cake Designs.</p>
 
-    <a href="index.html">Website Page</a>
+  <section class="element">
+    <div class="header">
+      <div class="navcontainer">
+        <nav>
+          <input id="nav-toggle" type="checkbox">
+          <div class="logo logoCo"><a href="index.html" class="logoCo"><strong>Shyama's</strong></a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="checkout.html">Order</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+          </ul>
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+        </nav>
+      </div>
+    </div>
+
+  </section>
+  <!-- navigation bar-->
+
+    <div class="intro">
+      <h1>SHYAMA'S <br>STYLEGUIDE</h1>
+      <p>A Style guide for Shyama's Cake Designs.</p>
+      <a href="index.html">Website Page</a>
+    </div>
+
+
 
 
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
-
-
       <section class="element">
-
         <div class="containers">
           <h3>In-text link</h3>
           <p>Shyama's designer cakes are a home owned luxury cake/pastries business located in Surrey, BC. Services
             range from wedding cakes to cookie orders. Each cake is custom ordered and designed to the client's liking.
             Click <a href="https://www.google.ca">here</a> to take a look at our cakes!</p>
-          <div class="boxp cp1"></div>
-          <div class="boxp cp2"></div>
-          <div class="boxp cp3"></div>
-          <div class="boxp cp4"></div>
-        </div>
-      </section>
+            <h3>Colour-palette</h3>
+            <div class="palette">
+              <div class="boxp cp1"></div>
+              <div class="boxp cp2"></div>
+              <div class="boxp cp3"></div>
+            </div>
+          </div>
+        </section>
 
 
 
 
       <!-- Default Button styling section -->
-      <section class="element">
+      <!-- <section class="element">
 
         <h3>Navigation Link</h3>
         <div class="fields">
@@ -60,19 +83,17 @@
         </div>
 
 
-      </section>
+      </section> -->
 
 
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
         <div class="fields">
           <h4>CSS selector:</h4>
-          <h4>Sample code:</h4>
-          <h4>Rendered element:</h4>
-        </div>
-        <div class="para">
           <p>.btn</p>
+          <h4>Sample code:</h4>
           <code>&lt;button class=" "&gt;name&lt;/button&gt;</code>
+          <h4>Rendered element:</h4>
         </div>
         <div class="btns">
           <div class="container">
@@ -88,12 +109,10 @@ TEXT INPUT FIELD WITH LABEL-->
         <h3>Text Input Field with Label</h3>
         <div class="fields">
           <h4>CSS selector:</h4>
-          <h4>Sample code:</h4>
-          <h4>Rendered element:</h4>
-        </div>
-        <div class="para">
           <p>.form, .content-name, .label-name</p>
+          <h4>Sample code:</h4>
           <code>&lt;input type="text" name="" required/&gt;</code>
+          <h4>Rendered element:</h4>
         </div>
         <div class="textinput">
           <div class="form">
@@ -111,7 +130,7 @@ TEXT INPUT FIELD WITH LABEL-->
       <!-- [START]
       RADIO BUTTON WITH LABEL-->
 
-      <section class="element">
+      <!-- <section class="element">
         <h3>Radio Button with Label</h3>
         <div class="fields">
           <h4>CSS selector:</h4>
@@ -128,30 +147,11 @@ TEXT INPUT FIELD WITH LABEL-->
           <input type="radio" name="flavour" id="vanilla" checked="checked">
           <label for="vanilla">Vanilla</label>
         </div>
-      </section>
+      </section> -->
 
       <!-- [END]
       RADIO BUTTON WITH LABEL from
     https://www.youtube.com/watch?v=sSF0bXFUFGM-->
-
-
-      <section class="element">
-        <div class="imglink">
-          <h3>Icons</h3>
-          <div class="icons">
-            <a href="https://www.google.com">
-              <img src="img/bdcake.png" alt="cake1">
-              <a href="https://www.google.com">
-                <img src="img/eventcake.png" alt="cake1">
-                <a href="https://www.google.com">
-                  <img src="img/weddingcake.png" alt="cake1">
-                </a>
-          </div>
-        </div>
-      </section>
-
-
-    </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
@@ -161,7 +161,18 @@ TEXT INPUT FIELD WITH LABEL-->
       <h2>Text Elements</h2>
 
       <section class="element">
-        <div class="headings">
+          <h3>Fonts</h3>
+          <div class="wheadings">
+            <strong>
+              <a class="h1">Cinzel-Regular</a><br><br>
+              <a class="h1">Fauna One-Regular</a><br><br>
+              <a class="h1">Brandon Grotesque-Regular</a><br><br>
+              <a class="h1">Times New Roman</a><br><br>
+            </strong>
+          </div>
+      </section>
+
+      <section class="element">
           <h3>Headings</h3>
           <div class="wheadings">
             <strong>
@@ -171,59 +182,20 @@ TEXT INPUT FIELD WITH LABEL-->
               <a class="h4">This is our H4</a><br><br>
             </strong>
           </div>
-        </div>
-
       </section>
 
       <section class="element">
-
+        <h3>Paragraphs</h3>
         <div class="paragraphs">
-          <h3>Paragraphs</h3>
-          <div class="p1">
             <p>Shyamas Designer Cakes are a home owned luxury cake/pastries business located in Surrey, BC. Services
               range from wedding cakes to cookie orders. Each cake is custom ordered and designed to the client's
               liking. Shyama's Designer Cakes creates custom cakes or pastries of any color, size, taste for any desired
               occasion or event. Shyama's Designer Cakes's target audience is based on anyone living in the lower
               mainland looking for a customized cake. The target audience ranging from 30 and above middle-upper class
               people that are looking for customized cakes for themselves or their children.</p>
-          </div>
-          <div class="p2">
-            <p>Shyamas Designer Cakes are a home owned luxury cake/pastries business located in Surrey, BC. Services
-              range from wedding cakes to cookie orders. Each cake is custom ordered and designed to the client's
-              liking. Shyama's Designer Cakes creates custom cakes or pastries of any color, size, taste for any desired
-              occasion or event. Shyama's Designer Cakes's target audience is based on anyone living in the lower
-              mainland looking for a customized cake. The target audience ranging from 30 and above middle-upper class
-              people that are looking for customized cakes for themselves or their children.</p>
-          </div>
-
-        </div>
+            </div>
       </section>
 
-      <section class="element">
-
-        <h3>Numbered Lists</h3>
-        <div class="fields">
-          <h4>CSS selector: </h4>
-          <h4>Sample code:</h4>
-          <h4>Rendered element:</h4>
-        </div>
-        <div class="para">
-          <p>.box</p>
-          <code>&lt;ol&gt;<br>&lt;li&gt;item 1&lt;/li&gt;<br>&lt;/ol&gt;</code>
-        </div>
-
-        <div class="box">
-          <h2>LIST</h2>
-          <ul>
-            <li><span>1</span>List Item One</li>
-            <li><span>2</span>List Item Two</li>
-            <li><span>3</span>List Item Three</li>
-            <li><span>4</span>List Item Four</li>
-            <li><span>5</span>List Item Five</li>
-          </ul>
-        </div>
-
-      </section>
       <!-- // TEXT ELEMENTS SECTION -->
 
 
@@ -232,72 +204,28 @@ TEXT INPUT FIELD WITH LABEL-->
       <section id="combined_elements">
         <h2>Combined Elements</h2>
 
-        <!--NAV BAR
-      retrieved from https://codepen.io/kevinpowell/pen/GrLKNo -->
 
         <section class="element">
           <h3>Main Navigation</h3>
-          <div class="header">
-            <div class="navcontainer">
-              <h1 class="logo">Shyama's</h1>
-              <nav>
-                <ul>
-                  <strong>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </strong>
-                </ul>
-              </nav>
-            </div>
+          <div class="navbar">
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="checkout.html">Order</a></li>
+              <li><a href="FAQ.html">FAQs</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+              <span class=" c line"></span>
+              <span class=" c line"></span>
+              <span class=" c line"></span>
+            </label>
           </div>
+
         </section>
 
         <!-- PRODUCT LISTING -->
 
-        <section class="element">
-          <h3>Product/Service Listing</h3>
 
-          <div class="pcontainer">
-            <div class="card">
-              <div class="images">
-                <div class="slider"></div>
-                <div class="img-slider">
-                  <div class="imgs"></div>
-                  <div class="imgs"></div>
-                  <div class="imgs"></div>
-                </div>
-              </div>
-              <div class="infos">
-                <h2>CAKE CAKE CAKE</h2>
-                <div class="price">
-                  <h5>$200</h5>
-                  <h5>$230</h5>
-                </div>
-                <div class="more-infos">
-                  <h6>Description</h6>
-                  <h6>Basic Info</h6>
-                  <h6>Ingredients</h6>
-                </div>
-                <div class="info-content">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.</p>
-                </div>
-                <div class="buttons">
-                  <button type="button" class="btn3">BUY NOW</button>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          </div>
-
-          </div>
-        </section>
 
         <!-- // PAYMENT FORM-->
 
@@ -307,6 +235,7 @@ TEXT INPUT FIELD WITH LABEL-->
           <div class="wrapper">
             <div class="pfcontainer">
               <div class="title"><strong>PAYMENT FORM</strong></div>
+              <img src="img/e-Transfer_logo.png" alt="etransfer">
               <div class="form">
                 <input type="text" name="name" autocomplete="off" required />
                 <label for="name" class="label-name">
@@ -338,7 +267,28 @@ TEXT INPUT FIELD WITH LABEL-->
         </section>
 
         <section class="element">
-          <h3>Checkout Cart</h3>
+          <h3>Order Form</h3>
+          <div class="wrapper">
+            <div class="pfcontainer">
+              <div class="title"><strong>ORDER FORM</strong></div>
+              <div class="form">
+                <input type="text" name="name" autocomplete="off" required />
+                <label for="name" class="label-name">
+                  <span class="content-name">Name</span>
+                </label>
+              </div>
+              <div class="form">
+                <input type="text" name="name" autocomplete="off" required />
+                <label for="name" class="label-name">
+                  <span class="content-name">Email</span>
+                </label>
+              </div>
+              <div class="orderinput">
+                Order Description:<br><br>
+                <textarea id="order" name="order" style="width: 100%;height:200px" placeholder="type your order here..."></textarea>
+              </div>
+            </div>
+          </div>
         </section>
 
       </section>
