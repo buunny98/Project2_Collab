@@ -380,3 +380,21 @@ span.price {
     color: RGB(181, 104, 76);
     background: rgb(22, 44, 58);
 }
+
+h2{
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+}
+
+.uploadpic{
+}
+
+.uploadpic form{
+  font-family: fauna one;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
