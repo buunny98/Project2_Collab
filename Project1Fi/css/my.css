@@ -5,10 +5,7 @@ body {
   background: rgb(219, 204, 181);
 }
 
-hr.new1 {
-  border-top: 1px dashed rgb(22, 44, 58);
 
-}
 
 
 /* The top navigation */
@@ -195,10 +192,15 @@ nav a:hover::before {
 
 /*faq stuff */
 
+hr.new1 {
+  border: 1px solid rgb(22, 44, 58);
+margin-right: 4.5rem;
+}
 .questions {
   font-family: Cinzel;
+  font-size: 20px;
   margin-top: 5rem;
-  margin-left: 4rem;
+  margin-left: 4.5rem;
   margin-right: 1rem;
 }
 .email {
@@ -206,6 +208,10 @@ nav a:hover::before {
   margin-top: 6rem;
   margin-left: 5rem;
   margin-right: 8rem;
+}
+.answers {
+  font-family: 'Fauna one';
+  font-size: 14px;
 }
 
 .row {
