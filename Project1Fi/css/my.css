@@ -4,9 +4,10 @@ body {
   box-sizing: border-box;
   background: rgb(219, 204, 181);
   color: rgb(22, 44, 58);
+  font-family: Fauna One;
 }
 
-/* The top navigation */
+/* TOP NAVIGATION */
 
 nav {
   position: fixed;
@@ -184,7 +185,7 @@ nav a:hover::before {
   clear: both;
 }
 
-/* The top navigation */
+/* TOP NAV BAR [END]*/
 
 .intro h1{
   font-family: 'Brandon Grotesque';
@@ -205,9 +206,8 @@ nav a:hover::before {
 /*faq stuff */
 
 hr.new1 {
-  border: 1px solid rgb(22, 44, 58);
-  margin-right: 4.5rem;
-  margin-left: 4.5rem;
+  border: 1px solid rgb(150, 150, 150);
+  max-width: 50%;
 }
 
 .questions {
@@ -225,6 +225,15 @@ hr.new1 {
   margin-bottom: 100px;
 }
 
+.answers {
+  font-family: 'Fauna one';
+  font-size: 14px;
+}
+
+/* FAQ PAGE [END] */
+
+
+
 .email {
   margin-top: 6rem;
   margin-left: 5rem;
@@ -234,11 +243,6 @@ hr.new1 {
 .email form{
   margin: auto;
   width: 75%;
-}
-
-.answers {
-  font-family: 'Fauna one';
-  font-size: 14px;
 }
 
 .row {
@@ -310,23 +314,6 @@ label {
   font-size: 24px;
 }
 
-.btn {
-  background-color: RGB(22, 44, 58);
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-family: Cinzel;
-  font-size: 17px;
-}
-
-.btn:hover {
-  background-color: RGB(181, 104, 76);
-  font-family: Fauna One;
-}
 
 span.price {
   font-family: Cinzel;
@@ -403,7 +390,9 @@ span.price {
   }
 }
 
+
 .btn {
+  padding: 12px;
   width: 100px;
   border-radius: 15px;
   font-size: 15px;
@@ -441,9 +430,6 @@ h4 {
   text-align: center;
 }
 
-<<<<<<< HEAD
-
-=======
 .uploadpic{
   margin-top: 100px;
   margin-left: auto;
@@ -454,7 +440,6 @@ h4 {
 .uploadpic p{
   text-align: center;
 }
->>>>>>> BRANCH3
 
 .uploadpic form{
   margin-left: auto;
@@ -474,6 +459,7 @@ h4 {
   transform: translateY(30%);
   text-align: center;
   margin: 20px;
+  margin-bottom: 100px;
   padding: 20px;
 }
 
@@ -481,6 +467,98 @@ h4 {
   font-family: 'Brandon Grotesque';
   font-size: 60px;
 }
+
+
+/* PAYMENT FORM */
+.filloutform{
+  padding: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textinput{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 60%;
+  display: flex;
+}
+
+.orderinput{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+}
+.form{
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  color: rgb(22, 44, 58);
+  font-family: fauna one;
+}
+
+.form input{
+  background: rgb(219, 204, 181);
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-family: fauna one;
+  font-size: 14px;
+  padding-top: 1px;
+  border: none;
+  outline: none;
+}
+
+.form label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form label::after{
+  content: "";
+  left: 0px;
+  bottom: -1px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid rgb(22, 44, 58);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content-name{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+    /*animation & styling*/
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name{
+  transform: translateY(-150%);
+  font-family: fauna one;
+  font-size: 12px;
+  color: grey;
+}
+
+.form input:focus + .label-name::after, .form input:valid + .label-name::after{
+  transform: translateX(0%);
+}
+
+
+
+
+
+
+
+
+
 
 /* Took a little help from online resource: https: //tutorialzine.com/ */
 /*Footer*/
