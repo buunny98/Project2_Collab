@@ -196,6 +196,7 @@ body {
 }
 
 .intro{
+    color: rgb(22, 44, 55);
   transform: translateY(30%);
   text-align: center;
   margin: 20px;

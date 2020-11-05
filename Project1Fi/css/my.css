@@ -208,6 +208,10 @@ nav a:hover::before {
   margin-right: 8rem;
 }
 
+.email h2{
+  text-align: center;
+}
+
 .checkoutsection .row .container {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -397,4 +401,17 @@ h4{
   align-items: center;
   margin: 20px;
   padding: 20px;
+}
+
+.intro{
+  color: rgb(22, 44, 55);
+  transform: translateY(30%);
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.intro h1{
+  font-family: 'Brandon Grotesque';
+  font-size: 60px;
 }
