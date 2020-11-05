@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: rgb(219, 204, 181);
+  color: rgb(22, 44, 58);
 }
 
 
@@ -190,6 +191,22 @@ nav a:hover::before {
 
 /* The top navigation */
 
+.intro h1{
+  font-family: 'Brandon Grotesque';
+  font-size: 60px;
+}
+
+
+.intro{
+  color: rgb(22, 44, 55);
+  transform: translateY(30%);
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+
 /*faq stuff */
 
 hr.new1 {
@@ -204,29 +221,21 @@ margin-right: 4.5rem;
   margin-right: 1rem;
 }
 .email {
-  font-family: Cinzel;
   margin-top: 6rem;
   margin-left: 5rem;
   margin-right: 8rem;
+}
+
+.email form{
+  margin: auto;
+  width: 75%;
 }
 .answers {
   font-family: 'Fauna one';
   font-size: 14px;
 }
 
-.row {
-  display: flex ;
 
-}
-.column {
-  flex: 2%;
-  padding: 1px;
-}
-.payment {
-  font-family: Cinzel;
-  margin-left: 5rem;
-  margin-right: 8rem;
-}
 
 .email h2{
   text-align: center;
@@ -261,7 +270,7 @@ margin-right: 4.5rem;
 }
 
 input[type=text] {
-  width: 100%;
+  width: 95%;
   font-family: Fauna One;
   margin-bottom: 20px;
   padding: 12px;
@@ -414,24 +423,33 @@ h4{
 }
 
 .uploadpic{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+}
+
+.uploadpic p{
+  text-align: center;
 }
 
 .uploadpic form{
-  font-family: fauna one;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
 }
 
-.intro{
-  color: rgb(22, 44, 55);
-  transform: translateY(30%);
-  text-align: center;
-  margin: 20px;
+.row {
+}
+.column {
+  transform: translateY(-30%);
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
 }
-
-.intro h1{
-  font-family: 'Brandon Grotesque';
-  font-size: 60px;
+.payment {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
 }
