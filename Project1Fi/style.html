@@ -5,12 +5,36 @@
 
   <meta charset="utf-8">
   <title>Shyama's Style Guide</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
+
 
 </head>
 
 <body>
+
+  <section class="element">
+    <div class="header">
+      <div class="navcontainer">
+        <nav>
+          <input id="nav-toggle" type="checkbox">
+          <div class="logo logoCo"><a href="index.html" class="logoCo"><strong>Shyama's</strong></a></div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="checkout.html">Order</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+          </ul>
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+        </nav>
+      </div>
+    </div>
+
+  </section>
   <!-- navigation bar-->
   <header>
     <h1>Shyama's Style Guide</h1>
@@ -34,7 +58,7 @@
             Click <a href="https://www.google.ca">here</a> to take a look at our cakes!</p>
           <div class="boxp cp1"></div>
           <div class="boxp cp2"></div>
-          <div class="boxp cp3"></div>
+          <!-- <div class="boxp cp3"></div> -->
           <div class="boxp cp4"></div>
         </div>
       </section>
@@ -43,7 +67,7 @@
 
 
       <!-- Default Button styling section -->
-      <section class="element">
+      <!-- <section class="element">
 
         <h3>Navigation Link</h3>
         <div class="fields">
@@ -60,7 +84,7 @@
         </div>
 
 
-      </section>
+      </section> -->
 
 
       <section class="element">
@@ -111,7 +135,7 @@ TEXT INPUT FIELD WITH LABEL-->
       <!-- [START]
       RADIO BUTTON WITH LABEL-->
 
-      <section class="element">
+      <!-- <section class="element">
         <h3>Radio Button with Label</h3>
         <div class="fields">
           <h4>CSS selector:</h4>
@@ -128,27 +152,14 @@ TEXT INPUT FIELD WITH LABEL-->
           <input type="radio" name="flavour" id="vanilla" checked="checked">
           <label for="vanilla">Vanilla</label>
         </div>
-      </section>
+      </section> -->
 
       <!-- [END]
       RADIO BUTTON WITH LABEL from
     https://www.youtube.com/watch?v=sSF0bXFUFGM-->
 
 
-      <section class="element">
-        <div class="imglink">
-          <h3>Icons</h3>
-          <div class="icons">
-            <a href="https://www.google.com">
-              <img src="img/bdcake.png" alt="cake1">
-              <a href="https://www.google.com">
-                <img src="img/eventcake.png" alt="cake1">
-                <a href="https://www.google.com">
-                  <img src="img/weddingcake.png" alt="cake1">
-                </a>
-          </div>
-        </div>
-      </section>
+
 
 
     </section>
@@ -175,6 +186,21 @@ TEXT INPUT FIELD WITH LABEL-->
 
       </section>
 
+
+      <section class="element">
+        <div class="headings">
+          <h3>Fonts</h3>
+          <div class="wheadings">
+            <strong>
+              <a class="h1">Cinzel-Regular</a><br><br>
+              <a class="h2">Fauna One-Regular</a><br><br>
+              <a class="h3">Brandon Grotesque-Regular</a><br><br>
+              <a class="h4">Times New Roman</a><br><br>
+            </strong>
+          </div>
+        </div>
+
+      </section>
       <section class="element">
 
         <div class="paragraphs">
@@ -199,31 +225,6 @@ TEXT INPUT FIELD WITH LABEL-->
         </div>
       </section>
 
-      <section class="element">
-
-        <h3>Numbered Lists</h3>
-        <div class="fields">
-          <h4>CSS selector: </h4>
-          <h4>Sample code:</h4>
-          <h4>Rendered element:</h4>
-        </div>
-        <div class="para">
-          <p>.box</p>
-          <code>&lt;ol&gt;<br>&lt;li&gt;item 1&lt;/li&gt;<br>&lt;/ol&gt;</code>
-        </div>
-
-        <div class="box">
-          <h2>LIST</h2>
-          <ul>
-            <li><span>1</span>List Item One</li>
-            <li><span>2</span>List Item Two</li>
-            <li><span>3</span>List Item Three</li>
-            <li><span>4</span>List Item Four</li>
-            <li><span>5</span>List Item Five</li>
-          </ul>
-        </div>
-
-      </section>
       <!-- // TEXT ELEMENTS SECTION -->
 
 
@@ -232,72 +233,22 @@ TEXT INPUT FIELD WITH LABEL-->
       <section id="combined_elements">
         <h2>Combined Elements</h2>
 
-        <!--NAV BAR
-      retrieved from https://codepen.io/kevinpowell/pen/GrLKNo -->
 
         <section class="element">
+
           <h3>Main Navigation</h3>
-          <div class="header">
-            <div class="navcontainer">
-              <h1 class="logo">Shyama's</h1>
-              <nav>
-                <ul>
-                  <strong>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </strong>
-                </ul>
-              </nav>
-            </div>
+          <div class="box">
+            <h2>Main Navigation</h2>
+            <ul>
+              <li><span></span> <a href="style.html" class="noColor">At the top of the Page</a></li>
+            </ul>
           </div>
+
         </section>
 
         <!-- PRODUCT LISTING -->
 
-        <section class="element">
-          <h3>Product/Service Listing</h3>
 
-          <div class="pcontainer">
-            <div class="card">
-              <div class="images">
-                <div class="slider"></div>
-                <div class="img-slider">
-                  <div class="imgs"></div>
-                  <div class="imgs"></div>
-                  <div class="imgs"></div>
-                </div>
-              </div>
-              <div class="infos">
-                <h2>CAKE CAKE CAKE</h2>
-                <div class="price">
-                  <h5>$200</h5>
-                  <h5>$230</h5>
-                </div>
-                <div class="more-infos">
-                  <h6>Description</h6>
-                  <h6>Basic Info</h6>
-                  <h6>Ingredients</h6>
-                </div>
-                <div class="info-content">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.</p>
-                </div>
-                <div class="buttons">
-                  <button type="button" class="btn3">BUY NOW</button>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          </div>
-
-          </div>
-        </section>
 
         <!-- // PAYMENT FORM-->
 
