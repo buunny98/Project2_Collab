@@ -731,3 +731,7 @@ h4 {
 .emailColor {
   color: white;
 }
+
+span.c{
+  display: block;
+}

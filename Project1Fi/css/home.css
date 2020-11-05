@@ -608,3 +608,6 @@ hr {
 .emailColor {
     color: white;
 }
+span.c{
+    display: block;
+}

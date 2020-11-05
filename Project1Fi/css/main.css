@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
 }
 
-h2{
+h2 {
   width: 85%;
   text-align: left;
   margin-left: auto;
@@ -15,74 +15,72 @@ h2{
 }
 
 .intro {
-    color: rgb(22, 44, 55);
-    transform: translateY(0%);
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
+  color: rgb(22, 44, 55);
+  transform: translateY(0%);
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
 }
 
 .intro h1 {
-    font-family: 'Brandon Grotesque';
-    font-size: 60px;
+  font-family: 'Brandon Grotesque';
+  font-size: 60px;
 }
 
 .intro h2 {
-    transform: translateY(-60%);
-    font-family: 'Brandon Grotesque';
-    font-size: 40px;
+  transform: translateY(-60%);
+  font-family: 'Brandon Grotesque';
+  font-size: 40px;
 }
 
 .element {
-    max-width: 80%;
-    padding: 30px;
-    border-top-width: 0.15rem;
-    border-top-style: solid;
-    border-top-color: black;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  max-width: 80%;
+  padding: 30px;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  /*color palette*/
+/*color palette*/
 
+.containers {
+  width: 100%;
+}
 
-  .containers{
-    width: 100%;
-  }
+.containers p {
+  font-family: fauna one;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .containers p {
-    font-family: fauna one;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.palette {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-  .palette{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+.boxp {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+}
 
-  .boxp {
-    width: 120px;
-    height: 120px;
-    margin: 10px;
+.cp1 {
+  background: rgb(219, 204, 181);
+}
 
-  }
+.cp2 {
+  background: RGB(181, 104, 76);
+}
 
-  .cp1 {
-    background: rgb(219, 204, 181);
-  }
+.cp3 {
+  background: rgb(22, 44, 58);
+}
 
-  .cp2 {
-    background: RGB(181, 104, 76);
-  }
-
-  .cp3 {
-    background: rgb(22, 44, 58);
-  }
-
-  /*color palette*/
+/*color palette*/
 
 code {
   width: 300px;
@@ -114,18 +112,18 @@ code {
 
 /*Style Guide basic styling*/
 
-
-
 /*
   INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling buttons */
-.container{
+
+.container {
   width: 25%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .btn {
   background: none;
   border-radius: 15px;
@@ -338,10 +336,9 @@ NUMBERED LIST*/
   TEXT ELEMENTS -------------------
 */
 
-
 .wheadings {
   font-family: Cinzel;
-  font-style: bold;
+  font-style: normal;
   color: rgb(22, 44, 58);
   text-align: center;
   width: 100%;
@@ -364,7 +361,7 @@ NUMBERED LIST*/
   font-style: italic;
 }
 
-.paragraphs{
+.paragraphs {
   font-family: fauna one;
   color: rgb(22, 44, 58);
 }
@@ -470,10 +467,6 @@ NUMBERED LIST*/
   transform: translateY(-20px);
 }
 
-.navbar{
-
-}
-
 .navbar .links {
   margin-left: auto;
   margin-right: auto;
@@ -521,9 +514,6 @@ NUMBERED LIST*/
   width: 0%;
 }
 
-
-
-
 /*[START]
 PRODUCT LISTING */
 
@@ -533,7 +523,6 @@ PRODUCT LISTING */
   align-items: center;
   height: 90vh;
   width: 80vw;
-  background-color: none;
   border-radius: 20px;
 }
 
@@ -578,7 +567,6 @@ PRODUCT LISTING */
 .infos h2 {
   color: rgb(22, 44, 58);
   font-family: Brandon Grotesque;
-  font-style: bold;
   font-size: 40px;
 }
 
@@ -590,7 +578,6 @@ PRODUCT LISTING */
 .infos h6 {
   color: grey;
   font-family: fauna one;
-  font-style: light;
   font-size: 10px;
   transform: translate(0%, -500%);
 }
@@ -644,7 +631,7 @@ PAYMENT FORM */
   border-top: 10px solid RGB(181, 104, 76);
 }
 
-.pfcontainer img{
+.pfcontainer img {
   margin-top: 20px;
   width: 40%;
   margin-left: auto;
@@ -654,7 +641,6 @@ PAYMENT FORM */
 .title {
   text-align: center;
   font-family: Brandon-Grotesque;
-  font-style: bold;
   font-size: 20px;
   color: rgb(22, 44, 58);
 }
@@ -855,6 +841,10 @@ nav a:hover::before {
 
 .noColor a:hover a:focus {
   color: rgb(233, 233, 233);
+}
+
+span.c {
+  display: block;
 }
 
 /*The top navigation */
