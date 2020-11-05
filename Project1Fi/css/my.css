@@ -247,7 +247,6 @@ hr.new1 {
   margin-left: 5rem;
   margin-right: 8rem;
 }
->>>>>>> BRANCH3
 
 .email h2 {
   text-align: center;
@@ -451,30 +450,11 @@ h4 {
   max-width: 250px;
 }
 
-.row {
-}
 .column {
-  transform: translateY(-30%);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-}
-.payment {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 50%;
-}
-
-.uploadpic {
-
-}
-
-.uploadpic form {
-  font-family: fauna one;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
+  max-width: 250px;
 }
 
 .intro {
