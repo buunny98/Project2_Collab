@@ -4,49 +4,92 @@
 */
 
 body {
-  margin: 20px;
-  padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: Cinzel;
+h2{
+  width: 85%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-code {
-  width: 400px;
-  height: 100px;
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
-}
-
-@media screen and (min-width: 50rem) {
-  .element {
+.intro {
+    color: rgb(22, 44, 55);
+    transform: translateY(0%);
+    text-align: center;
+    margin: 20px;
     padding: 20px;
+}
+
+.intro h1 {
+    font-family: 'Brandon Grotesque';
+    font-size: 60px;
+}
+
+.intro h2 {
+    transform: translateY(-60%);
+    font-family: 'Brandon Grotesque';
+    font-size: 40px;
+}
+
+.element {
+    max-width: 80%;
+    padding: 30px;
     border-top-width: 0.15rem;
     border-top-style: solid;
     border-top-color: black;
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
 
-h1 {
-  font-size: 30px;
-}
+  /*color palette*/
 
-h3 {
-  width: 100px;
-  margin-right: 50px;
-}
 
-.fields h4 {
-  margin-left: 20px;
-  padding: 20px;
-  font-size: 14px;
-  color: grey;
-  font-style: italic;
-  transform: translateY(0%);
+  .containers{
+    width: 100%;
+  }
+
+  .containers p {
+    font-family: fauna one;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .palette{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .boxp {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+
+  }
+
+  .cp1 {
+    background: rgb(219, 204, 181);
+  }
+
+  .cp2 {
+    background: RGB(181, 104, 76);
+  }
+
+  .cp3 {
+    background: rgb(22, 44, 58);
+  }
+
+  /*color palette*/
+
+code {
+  width: 300px;
+  height: 10px;
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
 }
 
 .para p {
@@ -71,50 +114,18 @@ h3 {
 
 /*Style Guide basic styling*/
 
-/*color palette*/
 
-@media screen and (min-width: 50rem) {
-  .containers {
-    display: flex;
-    padding-top: 30px;
-  }
-}
-
-.containers p {
-  padding: 15px 15px 10px 70px;
-  width: 400px;
-}
-
-.boxp {
-  width: 120px;
-  height: 120px;
-  margin: 10px;
-}
-
-.cp1 {
-  background: rgb(219, 204, 181);
-}
-
-.cp2 {
-  background: RGB(181, 104, 76);
-}
-
-.cp3 {
-  background: RGB(131, 107, 79);
-}
-
-.cp4 {
-  background: rgb(22, 44, 58);
-}
-
-/*color palette*/
 
 /*
   INTERACTIVE ELEMENTS -------------------
 */
 
 /* Styling buttons */
-
+.container{
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .btn {
   background: none;
   border-radius: 15px;
@@ -197,10 +208,11 @@ based on https://www.youtube.com/watch?v=IxRJ8vplzAo */
 
 .textinput {
   background: none;
-  transform: translate(-130%, 70%);
 }
 
 .form {
+  margin-left: auto;
+  margin-right: auto;
   width: 300px;
   position: relative;
   height: 50px;
@@ -326,22 +338,13 @@ NUMBERED LIST*/
   TEXT ELEMENTS -------------------
 */
 
-.headings {
-  display: flex;
-  padding-top: 30px;
-  position: relative;
-}
 
 .wheadings {
   font-family: Cinzel;
   font-style: bold;
   color: rgb(22, 44, 58);
-  margin-left: 120px;
-  padding-top: 0px;
-}
-
-.headings a {
-  padding: 20px 30px 30px 30px;
+  text-align: center;
+  width: 100%;
 }
 
 .h1 {
@@ -361,28 +364,9 @@ NUMBERED LIST*/
   font-style: italic;
 }
 
-@media screen and (min-width: 50rem) {
-  .paragraphs {
-    display: flex;
-    padding-top: 30px;
-  }
-}
-
-.p1 {
-  width: 400px;
+.paragraphs{
   font-family: fauna one;
   color: rgb(22, 44, 58);
-  margin-left: 100px;
-  box-sizing: border-box;
-  padding: 20px 30px 30px 30px;
-}
-
-.p2 {
-  color: grey;
-  width: 400px;
-  font-style: italic;
-  padding: 20px 30px 30px 30px;
-  font-size: 16px;
 }
 
 .box2 {
@@ -485,6 +469,60 @@ NUMBERED LIST*/
   font-weight: 600;
   transform: translateY(-20px);
 }
+
+.navbar{
+
+}
+
+.navbar .links {
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(22, 44, 58);
+  padding: 0;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.navbar .links li {
+  background: yellow;
+  padding: 20px;
+  padding-bottom: 10px;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar .links a {
+  background: red;
+  text-decoration: none;
+  font-family: Brandon Grotesque;
+  text-transform: uppercase;
+  display: block;
+  padding: 1em;
+  font-size: 13px;
+  font-weight: bold;
+  color: RGB(219, 204, 181);
+}
+
+.navbar a:hover {
+  color: RGB(181, 104, 76);
+}
+
+.navbar a::before {
+  content: '';
+  display: block;
+  transform: translateY(0%);
+  height: 9px;
+  background-color: RGB(255, 255, 255, 0);
+  top: 0;
+  width: 0%;
+}
+
+
+
 
 /*[START]
 PRODUCT LISTING */
@@ -594,7 +632,9 @@ PAYMENT FORM */
 }
 
 .pfcontainer {
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  max-width: 325px;
   height: auto;
   margin: 0px auto;
   background: rgb(219, 204, 181);
@@ -602,6 +642,13 @@ PAYMENT FORM */
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top: 10px solid RGB(181, 104, 76);
+}
+
+.pfcontainer img{
+  margin-top: 20px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
@@ -613,9 +660,10 @@ PAYMENT FORM */
 }
 
 .pfcontainer .btn3 {
-  transform: translateY(-100%);
-  width: 15%;
-  float: right;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
 }
 
 /*[END]

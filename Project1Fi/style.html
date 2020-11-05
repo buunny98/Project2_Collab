@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <title>Shyama's Style Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -36,32 +33,34 @@
 
   </section>
   <!-- navigation bar-->
-  <header>
-    <h1>Shyama's Style Guide</h1>
-    <p>A Style guide for Shyama's Cake Designs.</p>
 
-    <a href="index.html">Website Page</a>
+    <div class="intro">
+      <h1>SHYAMA'S <br>STYLEGUIDE</h1>
+      <p>A Style guide for Shyama's Cake Designs.</p>
+      <a href="index.html">Website Page</a>
+    </div>
+
+
 
 
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
-
-
       <section class="element">
-
         <div class="containers">
           <h3>In-text link</h3>
           <p>Shyama's designer cakes are a home owned luxury cake/pastries business located in Surrey, BC. Services
             range from wedding cakes to cookie orders. Each cake is custom ordered and designed to the client's liking.
             Click <a href="https://www.google.ca">here</a> to take a look at our cakes!</p>
-          <div class="boxp cp1"></div>
-          <div class="boxp cp2"></div>
-          <!-- <div class="boxp cp3"></div> -->
-          <div class="boxp cp4"></div>
-        </div>
-      </section>
+            <h3>Colour-palette</h3>
+            <div class="palette">
+              <div class="boxp cp1"></div>
+              <div class="boxp cp2"></div>
+              <div class="boxp cp3"></div>
+            </div>
+          </div>
+        </section>
 
 
 
@@ -91,12 +90,10 @@
         <h3>Submit/Reset Buttons</h3>
         <div class="fields">
           <h4>CSS selector:</h4>
-          <h4>Sample code:</h4>
-          <h4>Rendered element:</h4>
-        </div>
-        <div class="para">
           <p>.btn</p>
+          <h4>Sample code:</h4>
           <code>&lt;button class=" "&gt;name&lt;/button&gt;</code>
+          <h4>Rendered element:</h4>
         </div>
         <div class="btns">
           <div class="container">
@@ -112,12 +109,10 @@ TEXT INPUT FIELD WITH LABEL-->
         <h3>Text Input Field with Label</h3>
         <div class="fields">
           <h4>CSS selector:</h4>
-          <h4>Sample code:</h4>
-          <h4>Rendered element:</h4>
-        </div>
-        <div class="para">
           <p>.form, .content-name, .label-name</p>
+          <h4>Sample code:</h4>
           <code>&lt;input type="text" name="" required/&gt;</code>
+          <h4>Rendered element:</h4>
         </div>
         <div class="textinput">
           <div class="form">
@@ -157,12 +152,6 @@ TEXT INPUT FIELD WITH LABEL-->
       <!-- [END]
       RADIO BUTTON WITH LABEL from
     https://www.youtube.com/watch?v=sSF0bXFUFGM-->
-
-
-
-
-
-    </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
@@ -172,7 +161,18 @@ TEXT INPUT FIELD WITH LABEL-->
       <h2>Text Elements</h2>
 
       <section class="element">
-        <div class="headings">
+          <h3>Fonts</h3>
+          <div class="wheadings">
+            <strong>
+              <a class="h1">Cinzel-Regular</a><br><br>
+              <a class="h1">Fauna One-Regular</a><br><br>
+              <a class="h1">Brandon Grotesque-Regular</a><br><br>
+              <a class="h1">Times New Roman</a><br><br>
+            </strong>
+          </div>
+      </section>
+
+      <section class="element">
           <h3>Headings</h3>
           <div class="wheadings">
             <strong>
@@ -182,47 +182,18 @@ TEXT INPUT FIELD WITH LABEL-->
               <a class="h4">This is our H4</a><br><br>
             </strong>
           </div>
-        </div>
-
       </section>
 
-
       <section class="element">
-        <div class="headings">
-          <h3>Fonts</h3>
-          <div class="wheadings">
-            <strong>
-              <a class="h1">Cinzel-Regular</a><br><br>
-              <a class="h2">Fauna One-Regular</a><br><br>
-              <a class="h3">Brandon Grotesque-Regular</a><br><br>
-              <a class="h4">Times New Roman</a><br><br>
-            </strong>
-          </div>
-        </div>
-
-      </section>
-      <section class="element">
-
+        <h3>Paragraphs</h3>
         <div class="paragraphs">
-          <h3>Paragraphs</h3>
-          <div class="p1">
             <p>Shyamas Designer Cakes are a home owned luxury cake/pastries business located in Surrey, BC. Services
               range from wedding cakes to cookie orders. Each cake is custom ordered and designed to the client's
               liking. Shyama's Designer Cakes creates custom cakes or pastries of any color, size, taste for any desired
               occasion or event. Shyama's Designer Cakes's target audience is based on anyone living in the lower
               mainland looking for a customized cake. The target audience ranging from 30 and above middle-upper class
               people that are looking for customized cakes for themselves or their children.</p>
-          </div>
-          <div class="p2">
-            <p>Shyamas Designer Cakes are a home owned luxury cake/pastries business located in Surrey, BC. Services
-              range from wedding cakes to cookie orders. Each cake is custom ordered and designed to the client's
-              liking. Shyama's Designer Cakes creates custom cakes or pastries of any color, size, taste for any desired
-              occasion or event. Shyama's Designer Cakes's target audience is based on anyone living in the lower
-              mainland looking for a customized cake. The target audience ranging from 30 and above middle-upper class
-              people that are looking for customized cakes for themselves or their children.</p>
-          </div>
-
-        </div>
+            </div>
       </section>
 
       <!-- // TEXT ELEMENTS SECTION -->
@@ -235,13 +206,19 @@ TEXT INPUT FIELD WITH LABEL-->
 
 
         <section class="element">
-
           <h3>Main Navigation</h3>
-          <div class="box">
-            <h2>Main Navigation</h2>
-            <ul>
-              <li><span></span> <a href="style.html" class="noColor">At the top of the Page</a></li>
+          <div class="navbar">
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="checkout.html">Order</a></li>
+              <li><a href="FAQ.html">FAQs</a></li>
             </ul>
+            <label for="nav-toggle" class="icon-burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </label>
           </div>
 
         </section>
@@ -258,6 +235,7 @@ TEXT INPUT FIELD WITH LABEL-->
           <div class="wrapper">
             <div class="pfcontainer">
               <div class="title"><strong>PAYMENT FORM</strong></div>
+              <img src="img/e-Transfer_logo.png" alt="etransfer">
               <div class="form">
                 <input type="text" name="name" autocomplete="off" required />
                 <label for="name" class="label-name">
@@ -289,7 +267,28 @@ TEXT INPUT FIELD WITH LABEL-->
         </section>
 
         <section class="element">
-          <h3>Checkout Cart</h3>
+          <h3>Order Form</h3>
+          <div class="wrapper">
+            <div class="pfcontainer">
+              <div class="title"><strong>ORDER FORM</strong></div>
+              <div class="form">
+                <input type="text" name="name" autocomplete="off" required />
+                <label for="name" class="label-name">
+                  <span class="content-name">Name</span>
+                </label>
+              </div>
+              <div class="form">
+                <input type="text" name="name" autocomplete="off" required />
+                <label for="name" class="label-name">
+                  <span class="content-name">Email</span>
+                </label>
+              </div>
+              <div class="orderinput">
+                Order Description:<br><br>
+                <textarea id="order" name="order" style="width: 100%;height:200px" placeholder="type your order here..."></textarea>
+              </div>
+            </div>
+          </div>
         </section>
 
       </section>
