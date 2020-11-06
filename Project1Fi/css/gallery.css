@@ -501,10 +501,20 @@ body {
     line-height: 2;
 }
 
-.footer-distributed .footer-center p a {
-    color: RGB(219, 204, 181);
-    text-decoration: none;
-    ;
+@media (min-width: 15rem) {
+    .footer-distributed .footer-center p a {
+        color: RGB(219, 204, 181);
+        text-decoration: none;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 15rem) {
+    .footer-distributed .footer-center p a {
+        color: RGB(219, 204, 181);
+        text-decoration: none;
+        margin-left: -3rem;
+    }
 }
 
 /* Footer Right */
