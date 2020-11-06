@@ -288,7 +288,7 @@ hr.new1 {
 }
 
 input[type=text] {
-  width: 95%;
+  width: 100%;
   font-family: Fauna One;
   margin-bottom: 20px;
   padding: 12px;
@@ -434,7 +434,12 @@ h4 {
   text-align: center;
 }
 
+<<<<<<< Updated upstream
 .uploadpic form {
+=======
+.uploadpic form{
+  background: red;
+>>>>>>> Stashed changes
   margin-left: auto;
   margin-right: auto;
   max-width: 25rem;
@@ -541,10 +546,16 @@ h4 {
   left: 0px;
   transition: all 0.3s ease;
 }
+<<<<<<< Updated upstream
 
 /*animation & styling*/
 
 .form input:focus+.label-name .content-name, .form input:valid+.label-name .content-name {
+=======
+    /*animation & styling*/
+.form input:focus + .label-name .content-name, .form input:valid + .label-name .content-name{
+  background: yellow;
+>>>>>>> Stashed changes
   transform: translateY(-150%);
   font-family: fauna one;
   font-size: 12px;
@@ -553,6 +564,7 @@ h4 {
 
 .form input:focus+.label-name::after, .form input:valid+.label-name::after {
   transform: translateX(0%);
+    background: yellow;
 }
 
 /* Took a little help from online resource: https: //tutorialzine.com/ */
