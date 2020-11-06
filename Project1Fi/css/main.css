@@ -132,6 +132,12 @@ code {
   padding: 20px;
 }
 
+.para2 {
+  margin: 20px;
+  font-size: 15px;
+  padding: 20px;
+}
+
 .para code {
   margin: 20px;
   height: 20px;

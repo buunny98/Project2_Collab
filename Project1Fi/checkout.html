@@ -7,7 +7,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Checkout </title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Fauna+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Fauna+One&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/my.css" />
   <link rel="stylesheet" href="css/normalize.css">
 
@@ -48,7 +49,7 @@
     <div class="textinput">
       <div class="form">
         <input type="text" name="name" autocomplete="off" required />
-        <label for="name" class="label-name">
+        <label id="name" class="label-name">
           <span class="content-name">Name</span>
         </label>
       </div>
@@ -57,7 +58,7 @@
     <div class="textinput">
       <div class="form">
         <input type="text" name="name" autocomplete="off" required />
-        <label for="name" class="label-name">
+        <label id="name2" class="label-name">
           <span class="content-name">Email</span>
         </label>
       </div>
@@ -69,7 +70,6 @@
     </div>
   </div>
 
-  </div>
 
 
 
@@ -82,55 +82,6 @@
 
 
       <!--Taken help From https://dev.to/faddalibrahim/how-to-create-a-custom-file-upload-button-using-html-css-and-javascript-1c03-->
-      <style>
-        @media (min-width: 55rem) {
-          label.b {
-            background-color: rgb(22, 44, 58);
-            color: white;
-            padding: 0.5rem;
-            font-family: sans-serif;
-            border-radius: 0.3rem;
-            cursor: pointer;
-            margin-top: 1rem;
-            margin-left: 4rem;
-          }
-        }
-
-        @media (max-width: 55rem) {
-          label.b {
-            background-color: rgb(22, 44, 58);
-            color: white;
-            padding: 0.5rem;
-            font-family: sans-serif;
-            border-radius: 0.3rem;
-            cursor: pointer;
-            margin-top: 1rem;
-            margin-left: 0rem;
-          }
-        }
-
-        @media (min-width: 55rem) {
-          #file-chosen {
-            margin-left: 1rem;
-            font-family: sans-serif;
-
-          }
-        }
-
-        @media (max-width: 55rem) {
-          #file-chosen {
-            margin-left: -1rem;
-            font-family: sans-serif;
-            display: block;
-          }
-        }
-
-        @media (max-width: 55rem) {
-          .addSpace {
-            line-height: 2rem;
-          }
-        }
-      </style>
 
       <script>
         const actualBtn = document.getElementById('actual-btn');

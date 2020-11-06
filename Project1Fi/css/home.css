@@ -379,7 +379,7 @@ hr {
     */
         grid-template-columns: 8fr 1fr;
         grid-template-rows: auto;
-        grid-auto-flow: auto;
+
     }
 }
 
@@ -390,7 +390,6 @@ hr {
     */
         grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-rows: auto;
-        grid-auto-flow: auto;
     }
 }
 
