@@ -583,7 +583,6 @@ h4 {
 
 .form input:focus+.label-name .content-name, .form input:valid+.label-name .content-name {
   /*animation & styling*/
-  background: yellow;
   transform: translateY(-150%);
   font-family: fauna one;
   font-size: 12px;
@@ -592,7 +591,7 @@ h4 {
 
 .form input:focus+.label-name::after, .form input:valid+.label-name::after {
   transform: translateX(0%);
-  background: yellow;
+
 }
 
 /* Took a little help from online resource: https: //tutorialzine.com/ */
