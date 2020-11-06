@@ -1,6 +1,9 @@
-@font-face {
-    font-family: Fauna;
-    src: url(FaunaOne-Regular.ttf);
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(219, 204, 181);
+    font-family: 'Fauna One', serif;
 }
 
 /*  The top navigation */
@@ -17,13 +20,14 @@ nav {
 }
 
 nav .logo {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
     float: left;
     padding-bottom: 0rem;
     width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
-    font-family: Cinzel;
     text-transform: uppercase;
     font-size: 1.5rem;
     color: white;
@@ -36,6 +40,8 @@ nav .logo {
 }
 
 .logoCo {
+    font-family: 'Cinzel', serif;
+    font-style: bold;
     text-decoration: none;
     color: white;
 }
@@ -73,7 +79,6 @@ nav .links li {
 
 nav .links a {
     text-decoration: none;
-    font-family: Brandon Grotesque;
     text-transform: uppercase;
     display: block;
     padding: 1em;
@@ -188,12 +193,6 @@ nav a:hover::before {
 /* [START] GALLERY [START]
 		retrieved from https://www.youtube.com/watch?v=ltxxNidblts&t=595s*/
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: rgb(219, 204, 181);
-}
 
 .intro {
     color: rgb(22, 44, 55);
@@ -204,18 +203,47 @@ body {
 }
 
 .intro h1 {
-    font-family: 'Brandon Grotesque';
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
     font-size: 60px;
 }
 
+@media (max-width: 40rem) {
+    .intro h1 {
+      font-family: 'Brandon Grotesque';
+      font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 15rem) {
+    .intro h1 {
+      font-family: 'Brandon Grotesque';
+      font-size: 1.1rem;
+    }
+  }
+
 .intro h2 {
     transform: translateY(-60%);
-    font-family: 'Brandon Grotesque';
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
     font-size: 40px;
 }
 
+@media (max-width: 40rem) {
+    .intro h2 {
+      font-family: 'Brandon Grotesque';
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 15rem) {
+    .intro h2 {
+      font-family: 'Brandon Grotesque';
+      font-size: 1rem;
+    }
+  }
+
 .intro p {
-    font-family: 'Fauna one';
     font-size: 15px;
 }
 
@@ -288,7 +316,6 @@ body {
 }
 
 .container .box .details .content h2 {
-    font-family: Brandon Grotesque;
     margin: 0;
     padding: 0;
     font-size: 30px;
@@ -296,7 +323,6 @@ body {
 }
 
 .container .box .details .content p {
-    font-family: fauna one;
     font-size: 14px;
     margin: 10px 0 0;
     padding: 0;
@@ -309,7 +335,7 @@ body {
     border-radius: 15px;
     padding: 10px 20px;
     font-size: 15px;
-    font-family: Fauna One;
+    font-family: 'Fauna One', serif;
     cursor: pointer;
     margin: 10px;
     transition: 0.8s;
@@ -473,10 +499,20 @@ body {
     line-height: 2;
 }
 
-.footer-distributed .footer-center p a {
-    color: RGB(219, 204, 181);
-    text-decoration: none;
-    ;
+@media (min-width: 15rem) {
+    .footer-distributed .footer-center p a {
+        color: RGB(219, 204, 181);
+        text-decoration: none;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 15rem) {
+    .footer-distributed .footer-center p a {
+        color: RGB(219, 204, 181);
+        text-decoration: none;
+        margin-left: -3rem;
+    }
 }
 
 /* Footer Right */
@@ -536,12 +572,12 @@ body {
 }
 
 .logoFooter {
-    font-family: "Cinzel";
-    font-size: 1.6rem;
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
 }
 
 .textFooter {
-    font-family: Brandon Grotesque;
+  font-family: 'Fauna One', serif;
 }
 
 .emailColor {

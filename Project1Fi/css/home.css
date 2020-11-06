@@ -44,6 +44,12 @@ body {
     margin-top: -1rem;
 }
 
+@media (max-width: 50rem) {
+    .hero-image {
+        height: 450px;
+    }
+}
+
 .navcontainerBottom {
     width: 100%;
     margin: 0 auto;
@@ -533,10 +539,20 @@ hr {
     line-height: 2;
 }
 
-.footer-distributed .footer-center p a {
-    color: RGB(219, 204, 181);
-    text-decoration: none;
-    ;
+@media (min-width: 15rem) {
+    .footer-distributed .footer-center p a {
+        color: RGB(219, 204, 181);
+        text-decoration: none;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 15rem) {
+    .footer-distributed .footer-center p a {
+        color: RGB(219, 204, 181);
+        text-decoration: none;
+        margin-left: -3rem;
+    }
 }
 
 /* Footer Right */
@@ -580,7 +596,6 @@ hr {
     margin-bottom: 5px;
 }
 
-
 @media (max-width: 880px) {
     .footer-distributed {
         font: bold 14px sans-serif;
@@ -608,6 +623,7 @@ hr {
 .emailColor {
     color: white;
 }
-span.c{
+
+span.c {
     display: block;
 }
