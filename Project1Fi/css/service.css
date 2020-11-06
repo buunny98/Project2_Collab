@@ -87,7 +87,6 @@ PRODUCT LISTING */
   align-items: center;
   height: 90vh;
   width: 80vw;
-  background-color: none;
   border-radius: 20px;
 
 }
@@ -127,7 +126,6 @@ PRODUCT LISTING */
 .infos h2{
   color: rgb(22, 44, 58);
   font-family: Brandon Grotesque;
-  font-style: bold;
   font-size: 40px;
 
 }
@@ -138,7 +136,6 @@ PRODUCT LISTING */
 .infos h6{
   color: grey;
   font-family: fauna one;
-  font-style: light;
   font-size: 10px;
   transform: translate(0%, -600%);
 }
@@ -276,7 +273,6 @@ PAYMENT FORM */
 .title{
   text-align: center;
   font-family: Brandon-Grotesque;
-  font-style: bold;
   font-size: 20px;
   color: rgb(22, 44, 58);
 }

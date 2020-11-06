@@ -41,7 +41,6 @@ nav .logo {
 
 .logoCo {
     font-family: 'Cinzel', serif;
-    font-style: bold;
     text-decoration: none;
     color: white;
 }
@@ -210,14 +209,16 @@ nav a:hover::before {
 
 @media (max-width: 40rem) {
     .intro h1 {
-      font-family: 'Brandon Grotesque';
+      font-family: 'Cinzel', serif;
+      font-weight: bold;
       font-size: 1.7rem;
     }
   }
 
   @media (max-width: 15rem) {
     .intro h1 {
-      font-family: 'Brandon Grotesque';
+      font-family: 'Cinzel', serif;
+      font-weight: bold;
       font-size: 1.1rem;
     }
   }
@@ -231,14 +232,16 @@ nav a:hover::before {
 
 @media (max-width: 40rem) {
     .intro h2 {
-      font-family: 'Brandon Grotesque';
+      font-family: 'Cinzel', serif;
+      font-weight: lighter;
       font-size: 1.5rem;
     }
   }
 
   @media (max-width: 15rem) {
     .intro h2 {
-      font-family: 'Brandon Grotesque';
+      font-family: 'Cinzel', serif;
+      font-weight: lighter;
       font-size: 1rem;
     }
   }
