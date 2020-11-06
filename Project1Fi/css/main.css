@@ -5,7 +5,6 @@
 
 body {
   box-sizing: border-box;
-  font-family: 'fauna one', serif;
 }
 
 h2 {
@@ -16,24 +15,58 @@ h2 {
 }
 
 .intro {
-  color: rgb(22, 44, 55);
-  transform: translateY(0%);
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
+    color: rgb(22, 44, 55);
+    text-align: center;
+    padding: 20px;
 }
 
 .intro h1 {
-  font-family: 'Cinzel', serif;
-  font-weight: bold;
-  font-size: 60px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 60px;
 }
 
+@media (max-width: 40rem) {
+    .intro h1 {
+      font-family: 'Cinzel', serif;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 15rem) {
+    .intro h1 {
+      font-family: 'Cinzel', serif;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+
 .intro h2 {
-  transform: translateY(-60%);
-  font-family: 'Cinzel', serif;
-  font-weight: lighter;
-  font-size: 40px;
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (max-width: 40rem) {
+    .intro h2 {
+      font-family: 'Cinzel', serif;
+      font-weight: lighter;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 15rem) {
+    .intro h2 {
+      font-family: 'Cinzel', serif;
+      font-weight: lighter;
+      font-size: 1rem;
+    }
+  }
+
+.intro p {
+    font-size: 15px;
 }
 
 .element {
@@ -469,6 +502,7 @@ NUMBERED LIST*/
 }
 
 .navbar .links {
+  font-family: 'fauna one', serif;
   margin-left: auto;
   margin-right: auto;
   background: rgb(22, 44, 58);
@@ -562,6 +596,12 @@ PAYMENT FORM */
   width: 70px;
 }
 
+.orderinput{
+  font-family: 'fauna one', serif;
+  color: rgb(22, 44, 58);
+  margin-top: 20px;
+}
+
 /*[END]
 PAYMENT FORM */
 
@@ -618,6 +658,7 @@ nav .logo {
 }
 
 nav .links {
+  font-family: 'fauna one', serif;
   float: right;
   padding: 0;
   margin: 0;
