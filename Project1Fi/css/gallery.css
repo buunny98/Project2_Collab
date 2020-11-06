@@ -208,12 +208,40 @@ nav a:hover::before {
     font-size: 60px;
 }
 
+@media (max-width: 40rem) {
+    .intro h1 {
+      font-family: 'Brandon Grotesque';
+      font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 15rem) {
+    .intro h1 {
+      font-family: 'Brandon Grotesque';
+      font-size: 1.1rem;
+    }
+  }
+
 .intro h2 {
     transform: translateY(-60%);
     font-family: 'Cinzel', serif;
     font-weight: lighter;
     font-size: 40px;
 }
+
+@media (max-width: 40rem) {
+    .intro h2 {
+      font-family: 'Brandon Grotesque';
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 15rem) {
+    .intro h2 {
+      font-family: 'Brandon Grotesque';
+      font-size: 1rem;
+    }
+  }
 
 .intro p {
     font-size: 15px;

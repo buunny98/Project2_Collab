@@ -541,19 +541,19 @@ hr {
 
 @media (min-width: 15rem) {
     .footer-distributed .footer-center p a {
-      color: RGB(219, 204, 181);
-      text-decoration: none;
-      margin-left: 0rem;
+        color: RGB(219, 204, 181);
+        text-decoration: none;
+        margin-left: 0rem;
     }
-  }
-  
-  @media (max-width: 15rem) {
+}
+
+@media (max-width: 15rem) {
     .footer-distributed .footer-center p a {
-      color: RGB(219, 204, 181);
-      text-decoration: none;
-      margin-left: -3rem;
+        color: RGB(219, 204, 181);
+        text-decoration: none;
+        margin-left: -3rem;
     }
-  }
+}
 
 /* Footer Right */
 
