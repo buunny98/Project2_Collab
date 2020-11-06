@@ -373,11 +373,30 @@ NUMBERED LIST*/
 */
 
 .wheadings {
-  font-family: Cinzel;
+  font-family: 'Cinzel', serif;
   font-style: normal;
   color: rgb(22, 44, 58);
   text-align: center;
   width: 100%;
+}
+
+.theadings{
+  font-size: 40px;
+  color: rgb(22, 44, 58);
+  text-align: center;
+  width: 100%;
+}
+
+.t1{
+  font-family: 'Cinzel', serif;
+}
+
+.t2{
+  font-family: 'Fauna One', serif;
+}
+
+.t3{
+  font-family: 'Times New Roman', serif;
 }
 
 .h1 {
