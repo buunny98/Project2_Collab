@@ -212,7 +212,7 @@ hr.new1 {
   font-family: Cinzel;
   font-size: 20px;
   margin-top: 10rem;
-  margin-left: 4.5rem;
+  margin-left: 1rem;
   margin-right: 1rem;
 }
 
@@ -299,7 +299,7 @@ input[type=text] {
 label {
   font-family: Cinzel;
   margin-bottom: 10px;
-  display: block;
+  /*display: block;*/
 }
 
 .icon-container {
@@ -391,7 +391,7 @@ span.price {
   font-size: 15px;
   font-family: Fauna One;
   cursor: pointer;
-  margin: 10px;
+  margin: 0rem;
   transition: 0.8s;
   overflow: hidden;
   background: rgb(219, 204, 181);
@@ -424,7 +424,7 @@ h4 {
 }
 
 .uploadpic {
-  margin-top: 100px;
+  margin-top: 10rem;
   margin-left: auto;
   margin-right: auto;
   min-width: 50%;
@@ -437,7 +437,7 @@ h4 {
 .uploadpic form {
   margin-left: auto;
   margin-right: auto;
-  max-width: 250px;
+  max-width: 25rem;
 }
 
 .column {

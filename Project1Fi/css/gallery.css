@@ -205,13 +205,41 @@ body {
 
 .intro h1 {
     font-family: 'Brandon Grotesque';
-    font-size: 60px;
+    font-size: 5rem;
+}
+
+@media (max-width: 40rem) {
+    .intro h1 {
+        font-family: 'Brandon Grotesque';
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 20rem) {
+    .intro h1 {
+        font-family: 'Brandon Grotesque';
+        font-size: 1rem;
+    }
 }
 
 .intro h2 {
     transform: translateY(-60%);
     font-family: 'Brandon Grotesque';
-    font-size: 40px;
+    font-size: 3rem;
+}
+
+@media (max-width: 40rem) {
+    .intro h2 {
+        font-family: 'Brandon Grotesque';
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 20rem) {
+    .intro h2 {
+        font-family: 'Brandon Grotesque';
+        font-size: 1rem;
+    }
 }
 
 .intro p {
@@ -548,6 +576,6 @@ body {
     color: white;
 }
 
-span.c{
+span.c {
     display: block;
 }
