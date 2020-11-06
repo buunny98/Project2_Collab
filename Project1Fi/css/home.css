@@ -10,6 +10,7 @@ body {
     margin: 0rem;
     padding: 0rem;
     background: rgb(219, 204, 181);
+    font-family: 'Fauna One', serif;
 }
 
 .homeText {
@@ -167,7 +168,6 @@ nav .links li {
 
 nav .links a {
     text-decoration: none;
-    font-family: Brandon Grotesque;
     text-transform: uppercase;
     display: block;
     padding: 1em;
@@ -617,7 +617,7 @@ hr {
 }
 
 .textFooter {
-    font-family: Brandon Grotesque;
+  font-family: 'fauna one', serif;
 }
 
 .emailColor {
